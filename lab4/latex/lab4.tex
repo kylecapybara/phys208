@@ -1,0 +1,66 @@
+
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{tikz}
+\usepackage{booktabs}
+\usepackage{float}
+
+
+
+% for custom subsection
+\usepackage{titlesec}
+% package for enumerate with letters
+\usepackage{enumitem}
+
+\titleformat{\subsection}
+  {\normalfont\fontfamily{phv}\fontsize{14}{17}}{\thesubsection}{1em}{}
+
+\geometry{margin=1in}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Kyle Wodehouse}
+\lhead{phys228}
+\chead{lab 4}
+\title{\bfseries lab 4}
+\author{Kyle Wodehouse}
+\rfoot{\thepage}
+% 1 -> 5 from least to most descriptive
+\setcounter{tocdepth}{1}
+
+\begin{document}
+\maketitle
+
+\[ dR/dL = \left(2.190\times 10^5 \pm 1.4\times10^3\right) \,\frac{\mu\Omega}{\text{cm}}  = \frac{112\,\mu \Omega \cdot \text{cm}}{A} \]
+\[ A = \frac{112\,\mu \Omega \cdot \text{cm}}{\left(2.190\times 10^5 \pm 1.4\times10^3\right) \,\frac{\mu\Omega}{\text{cm}}} = \left(5.115\times 10^{-4} \pm 3.3\times10^{-6} \right)\,\text{cm}^2 \]
+\[ D = 2r = 2\sqrt{\frac{A}{\pi}} = 2\sqrt{\frac{\left(5.115\times 10^{-4} \pm 3.3\times10^{-6}\right)\,\text{cm}^2}{3.1415\ldots}} = 0.025521 \pm 0.000083 \,\text{cm} \]
+
+\vspace{2em}
+
+\[
+    \rho = \frac{RA}{L} = \frac{17.8\,\Omega * \left(\pi{\left(\frac{0.00064\,\text{m}}{2}\right)}^2\right)}{500 \times \pi \times 0.2131\,\text{m}} = 1.71 \times 10^{-8}\,\Omega\cdot\text{m}
+\]
+
+\vspace{2em}
+
+\begin{align*}
+  \lim_{R_0 \to 0} R(T) &= \lim_{R_0 \to 0} \left( R_0 + \alpha (T - T_0) \right) \\
+  \lim_{R_0 \to 0} R(T) &= \alpha T \\
+  \frac{R(T)}{\alpha} &= T
+\end{align*}
+
+\begin{align*}
+  P(T) &= \beta T^4 \\
+  &= \beta \left( \frac{R(T)}{\alpha} \right)^4 \\
+  &= k R^4
+\end{align*}
+
+
+
+\end{document}
